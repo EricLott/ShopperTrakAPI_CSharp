@@ -73,9 +73,4 @@ namespace ShopperTrakAPI_CSharp
         [XmlElement(ElementName = "hierarchyNode")]
         public HierarchyNode HierarchyNode { get; set; }
     }
-
-    internal T FromXML<T>(this string objectData)
-    {
-        return (T)XmlDeserializeFromString(objectData, typeof(T));
-    }
 }
