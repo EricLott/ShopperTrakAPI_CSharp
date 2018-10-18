@@ -26,7 +26,7 @@ namespace ShopperTrakAPI_CSharp
 
                 IRestResponse response = client.Execute(request);
 
-                return response.Content.XmlDeserializeFromString<HourlyPerformanceResponse>();
+                return response.Content.FromXML<HourlyPerformanceResponse>();
             }
             catch (Exception ee)
             {

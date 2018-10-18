@@ -23,7 +23,7 @@ namespace ShopperTrakAPI_CSharp
             return sb.ToString();
         }
 
-        public static T XmlDeserializeFromString<T>(this string objectData)
+        public static T FromXML<T>(this string objectData)
         {
             return (T)XmlDeserializeFromString(objectData, typeof(T));
         }
