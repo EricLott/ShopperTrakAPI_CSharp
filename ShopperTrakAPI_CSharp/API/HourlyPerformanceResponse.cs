@@ -1,6 +1,9 @@
 ﻿using System;
-using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ShopperTrakAPI_CSharp
 {
@@ -65,10 +68,9 @@ namespace ShopperTrakAPI_CSharp
     }
 
     [XmlRoot(ElementName = "kpis")]
-    public class Kpis
+    public class HourlyPerformanceResponse
     {
         [XmlElement(ElementName = "hierarchyNode")]
         public HierarchyNode HierarchyNode { get; set; }
     }
-
 }

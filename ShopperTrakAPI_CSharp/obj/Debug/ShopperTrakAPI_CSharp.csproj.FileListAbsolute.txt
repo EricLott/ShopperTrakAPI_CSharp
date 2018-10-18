@@ -1,0 +1,9 @@
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\bin\Debug\ShopperTrakAPI_CSharp.dll
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\bin\Debug\ShopperTrakAPI_CSharp.pdb
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\obj\Debug\ShopperTrakAPI_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\obj\Debug\ShopperTrakAPI_CSharp.dll
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\obj\Debug\ShopperTrakAPI_CSharp.pdb
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\bin\Debug\RestSharp.dll
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\bin\Debug\RestSharp.xml
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\obj\Debug\ShopperTrakAPI_CSharp.csprojAssemblyReference.cache
+C:\Users\elott\source\repos\ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp\obj\Debug\ShopperTrakAPI_CSharp.csproj.CopyComplete

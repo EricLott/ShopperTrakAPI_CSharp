@@ -3,36 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopperTrakAPI_CSharp", "ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp.csproj", "{AA5461A8-8C32-4EB3-A384-8A829D282863}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopperTrakAPI_CSharp", "ShopperTrakAPI_CSharp\ShopperTrakAPI_CSharp.csproj", "{ACEF9E74-A4D2-4D98-8184-E64250C036DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|ARM.ActiveCfg = Debug|ARM
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|ARM.Build.0 = Debug|ARM
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|x64.ActiveCfg = Debug|x64
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|x64.Build.0 = Debug|x64
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|x86.ActiveCfg = Debug|x86
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Debug|x86.Build.0 = Debug|x86
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|ARM.ActiveCfg = Release|ARM
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|ARM.Build.0 = Release|ARM
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|x64.ActiveCfg = Release|x64
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|x64.Build.0 = Release|x64
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|x86.ActiveCfg = Release|x86
-		{AA5461A8-8C32-4EB3-A384-8A829D282863}.Release|x86.Build.0 = Release|x86
+		{ACEF9E74-A4D2-4D98-8184-E64250C036DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACEF9E74-A4D2-4D98-8184-E64250C036DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACEF9E74-A4D2-4D98-8184-E64250C036DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACEF9E74-A4D2-4D98-8184-E64250C036DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
