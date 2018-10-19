@@ -10,7 +10,7 @@ namespace ShopperTrakAPI_CSharp
     {
         public string username { get; set; }
         public string password { get; set; }
-        public string authString { get; private set; }
+        internal string authString { get; private set; }
 
         public Credentials(string _username, string _password)
         {

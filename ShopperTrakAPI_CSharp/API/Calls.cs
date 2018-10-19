@@ -1,5 +1,4 @@
 ﻿using RestSharp;
-using ShopperTrakAPI_CSharp.HourlyPerformance;
 using System;
 
 namespace ShopperTrakAPI_CSharp

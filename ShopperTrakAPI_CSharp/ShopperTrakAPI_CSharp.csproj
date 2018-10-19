@@ -46,13 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\Auth.cs" />
-    <Compile Include="API\BasicKPIsResponse.cs" />
     <Compile Include="API\Calls.cs" />
     <Compile Include="API\Deserializer.cs" />
-    <Compile Include="API\HierarchyResponse.cs" />
-    <Compile Include="API\HourlyPerformanceResponse.cs" />
-    <Compile Include="API\PowerHoursResponse.cs" />
     <Compile Include="API\Responses.cs" />
+    <Compile Include="API\ResponseClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
