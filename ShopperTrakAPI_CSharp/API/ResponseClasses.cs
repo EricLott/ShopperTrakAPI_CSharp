@@ -1,5 +1,6 @@
-﻿using System.Xml.Serialization;
+﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace ShopperTrakAPI_CSharp
 {
@@ -9,19 +10,55 @@ namespace ShopperTrakAPI_CSharp
         [XmlElement(ElementName = "traffic")]
         public Traffic Traffic { get; set; }
         [XmlElement(ElementName = "conversion")]
-        public string Conversion { get; set; }
+        public decimal Conversion { get; set; }
         [XmlElement(ElementName = "star")]
         public string Star { get; set; }
         [XmlElement(ElementName = "sales")]
-        public string Sales { get; set; }
+        public decimal Sales { get; set; }
         [XmlElement(ElementName = "salesPerShopper")]
-        public string SalesPerShopper { get; set; }
+        public decimal SalesPerShopper { get; set; }
         [XmlElement(ElementName = "avgTransactionSize")]
-        public string AvgTransactionSize { get; set; }
+        public decimal AvgTransactionSize { get; set; }
         [XmlAttribute(AttributeName = "endDate")]
-        public string EndDate { get; set; }
+        public string EndDateRaw { get; set; }
         [XmlAttribute(AttributeName = "startDate")]
-        public string StartDate { get; set; }
+        public string StartDateRaw { get; set; }
+        public DateTime StartDate
+        {
+            get
+            {
+                if (StartDateRaw != null)
+                {
+                    return DateTime.ParseExact(StartDateRaw, "yyyyMMdd", null);
+                }
+                else
+                {
+                    return DateTime.MinValue;
+                }
+            }
+            set
+            {
+                StartDate = value;
+            }
+        }
+        public DateTime EndDate
+        {
+            get
+            {
+                if (EndDateRaw != null)
+                {
+                    return DateTime.ParseExact(EndDateRaw, "yyyyMMdd", null);
+                }
+                else
+                {
+                    return DateTime.MinValue;
+                }
+            }
+            set
+            {
+                EndDate = value;
+            }
+        }
     }
 
     [XmlRoot(ElementName = "hour")]
@@ -42,9 +79,27 @@ namespace ShopperTrakAPI_CSharp
         [XmlElement(ElementName = "saturday")]
         public string Saturday { get; set; }
         [XmlElement(ElementName = "total")]
-        public string Total { get; set; }
+        public decimal Total { get; set; }
         [XmlAttribute(AttributeName = "startTime")]
-        public string StartTime { get; set; }
+        public string StartTimeRaw { get; set; }
+        public DateTime StartTime
+        {
+            get
+            {
+                if (StartTimeRaw != null)
+                {
+                    return DateTime.ParseExact(StartTimeRaw, "HHmmss", null);
+                }
+                else
+                {
+                    return DateTime.MinValue;
+                }
+            }
+            set
+            {
+                StartTime = value;
+            }
+        }
     }
 
     [XmlRoot(ElementName = "hierarchy")]
@@ -55,20 +110,20 @@ namespace ShopperTrakAPI_CSharp
         [XmlElement(ElementName = "hierarchyNode")]
         public List<HierarchyNode> HierarchyNode { get; set; }
         [XmlAttribute(AttributeName = "shopperTrakID")]
-        public string ShopperTrakID { get; set; }
+        public long ShopperTrakID { get; set; }
     }
 
     [XmlRoot(ElementName = "hierarchyNode")]
     public class HierarchyNode
     {
         [XmlElement(ElementName = "customerID")]
-        public string CustomerID { get; set; }
+        public long CustomerID { get; set; }
         [XmlElement(ElementName = "name")]
         public string Name { get; set; }
         [XmlAttribute(AttributeName = "parentID")]
-        public string ParentID { get; set; }
+        public long ParentID { get; set; }
         [XmlAttribute(AttributeName = "shopperTrakID")]
-        public string ShopperTrakID { get; set; }
+        public long ShopperTrakID { get; set; }
         [XmlElement(ElementName = "hour")]
         public List<Hour> Hour { get; set; }
         [XmlElement(ElementName = "total")]
@@ -81,26 +136,81 @@ namespace ShopperTrakAPI_CSharp
         [XmlElement(ElementName = "traffic")]
         public Traffic Traffic { get; set; }
         [XmlElement(ElementName = "conversion")]
-        public string Conversion { get; set; }
+        public decimal Conversion { get; set; }
         [XmlElement(ElementName = "star")]
         public string Star { get; set; }
         [XmlElement(ElementName = "sales")]
-        public string Sales { get; set; }
+        public decimal Sales { get; set; }
         [XmlElement(ElementName = "salesPerShopper")]
-        public string SalesPerShopper { get; set; }
+        public decimal SalesPerShopper { get; set; }
         [XmlElement(ElementName = "avgTransactionSize")]
-        public string AvgTransactionSize { get; set; }
+        public decimal AvgTransactionSize { get; set; }
         [XmlAttribute(AttributeName = "startDateTime")]
-        public string StartDateTime { get; set; }
+        public string StartDateTimeRaw
+        { get; set; }
+        public DateTime StartDateTime
+        {
+            get
+            {
+                if (StartDateTimeRaw != null)
+                {
+                    return DateTime.ParseExact(StartDateTimeRaw, "yyyyMMddHHmmss", null);
+                }
+                else
+                {
+                    return DateTime.MinValue;
+                }
+            }
+            set
+            {
+                StartDateTime = value;
+            }
+        }
     }
 
     [XmlRoot(ElementName = "period")]
     public class Period
     {
         [XmlAttribute(AttributeName = "startDate")]
-        public string StartDate { get; set; }
+        public string StartDateRaw { get; set; }
         [XmlAttribute(AttributeName = "endDate")]
-        public string EndDate { get; set; }
+        public string EndDateRaw { get; set; }
+        public DateTime StartDate
+        {
+            get
+            {
+                if (StartDateRaw != null)
+                {
+                    return DateTime.ParseExact(StartDateRaw, "yyyyMMdd", null);
+                }
+                else
+                {
+                    return DateTime.MinValue;
+                }
+            }
+            set
+            {
+                StartDate = value;
+            }
+        }
+        public DateTime EndDate
+        {
+            get
+            {
+                if (EndDateRaw != null)
+                {
+                    return DateTime.ParseExact(EndDateRaw, "yyyyMMdd", null);
+                }
+                else
+                {
+                    return DateTime.MinValue;
+                }
+            }
+            set
+            {
+                EndDate = value;
+            }
+        }
     }
 
     [XmlRoot(ElementName = "total")]
@@ -109,23 +219,23 @@ namespace ShopperTrakAPI_CSharp
         [XmlElement(ElementName = "traffic")]
         public Traffic Traffic { get; set; }
         [XmlElement(ElementName = "conversion")]
-        public string Conversion { get; set; }
+        public decimal Conversion { get; set; }
         [XmlElement(ElementName = "star")]
         public string Star { get; set; }
         [XmlElement(ElementName = "sales")]
-        public string Sales { get; set; }
+        public decimal Sales { get; set; }
         [XmlElement(ElementName = "salesPerShopper")]
-        public string SalesPerShopper { get; set; }
+        public decimal SalesPerShopper { get; set; }
         [XmlElement(ElementName = "avgTransactionSize")]
-        public string AvgTransactionSize { get; set; }
+        public decimal AvgTransactionSize { get; set; }
     }
 
     [XmlRoot(ElementName = "traffic")]
     public class Traffic
     {
         [XmlAttribute(AttributeName = "exits")]
-        public string Exits { get; set; }
+        public long Exits { get; set; }
         [XmlAttribute(AttributeName = "enters")]
-        public string Enters { get; set; }
+        public long Enters { get; set; }
     }
 }
