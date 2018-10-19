@@ -1,7 +1,6 @@
 ﻿using RestSharp;
+using ShopperTrakAPI_CSharp.HourlyPerformance;
 using System;
-using System.IO;
-using System.Xml.Serialization;
 
 namespace ShopperTrakAPI_CSharp
 {
