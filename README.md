@@ -1,10 +1,15 @@
 # ShopperTrakAPI_CSharp
  Work in progress
 
+This version of the API includes the following calls:
 
-## This version of the API includes the following calls:
+- [ ] Hierarchy Call
+- [ ] Basic KPIs Call
+- [x] Hourly Performance Call
+- [ ] Power Hours Call
 
-### Hourly Performance
+
+### Hourly Performance Call
 #### Returns daily performance broken down by hour for one day specified
 
 ##### Example Call:
