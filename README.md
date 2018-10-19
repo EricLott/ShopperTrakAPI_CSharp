@@ -10,9 +10,9 @@ This version of the API includes the following calls:
 
 
 ### Hourly Performance Call
-#### Returns daily performance broken down by hour for one day specified
+> Returns daily performance broken down by hour for one day specified
 
-##### Example Call:
+###### Example Call:
 ```csharp
 //Set up new API credentials (username and password supplied by ShopperTrak)
 Credentials credentials = new Credentials(username, password);
