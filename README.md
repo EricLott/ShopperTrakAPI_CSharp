@@ -10,7 +10,7 @@ This version of the API includes the following calls:
 
 
 ### Hourly Performance Call
-> Returns daily performance broken down by hour for one day specified
+#### Returns daily performance broken down by hour for one day specified
 
 ###### Example Call:
 ```csharp
