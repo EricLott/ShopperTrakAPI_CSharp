@@ -1,13 +1,13 @@
 # ShopperTrakAPI_CSharp
-Work in progress
+ Work in progress
 
 
-This version of the API includes the following calls:
+## This version of the API includes the following calls:
 
-## Hourly Performance
-### Returns daily performance broken down by hour for one day specified
+### Hourly Performance
+#### Returns daily performance broken down by hour for one day specified
 
-#### Example Call:
+##### Example Call:
 ```csharp
 //Set up new API credentials (username and password supplied by ShopperTrak)
 Credentials credentials = new Credentials(username, password);
