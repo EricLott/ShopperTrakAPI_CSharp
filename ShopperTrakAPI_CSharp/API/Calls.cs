@@ -1,4 +1,5 @@
 ﻿using RestSharp;
+using ShopperTrakAPI_CSharp.KPI;
 using System;
 
 namespace ShopperTrakAPI_CSharp
